@@ -31,7 +31,7 @@
     <nav>
       <div class="container clearfix">
         <div id="logo-box">
-          <a href="/" class="logo text-uppercase"> Start Bootstrap </a>
+          <a href="/" class="logo text-uppercase"> MyPortfolio </a>
         </div>
 
         <div id="nav-links" class="responsive">
@@ -42,11 +42,15 @@
               </a>
             </li>
             <li class="nav-item text-uppercase portfolio">
-              <a href="#" class="nav-link "> Portfolio </a>
+              <a href="#" class="nav-link">
+                Portfolio <i class="fas fa-caret-down"></i>
+              </a>
               <ul class="dropdown">
                 <li><a href="">Projects</a></li>
                 <li><a href="">About Me</a></li>
-                <li><a href="">Links</a></li>
+                <li>
+                  <a href="">Links <i class="fas fa-caret-right"></i></a>
+                </li>
               </ul>
             </li>
             <li class="nav-item text-uppercase">
@@ -68,7 +72,7 @@
           src="images/avatar.png"
           alt=""
         />
-        <h1 class="text-uppercase">Start Bootstrap</h1>
+        <h1 class="text-uppercase">MyPortfolio</h1>
         <hr class="star-light" />
         <h2>Graphic Artist - Web Designer - Illustrator</h2>
       </div>
@@ -268,16 +272,13 @@
       </div>
     </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.7.0.min.js"
-   
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 
     <script>
-        $(".nav-icon").click(function(){
-            $("#nav-links").toggleClass("responsive")
-               return false;
-        });
+      $(".nav-icon").click(function () {
+        $("#nav-links").toggleClass("responsive");
+        return false;
+      });
     </script>
   </body>
 </html>
