@@ -214,6 +214,7 @@ nav {
 #nav-links .nav-icon {
     display: none;
 }
+
 @media (max-width:992px){
     #logo-box{
         float: none;
@@ -234,8 +235,11 @@ nav {
         display: block;
         position: absolute;
         top: 10px;
-        left: 5px;
+        right: 5px;
         font-size: 3rem;
+    }
+    #nav-links.responsive li:not(:first-child){
+        display: none;
     }
 }
 /* Header */
