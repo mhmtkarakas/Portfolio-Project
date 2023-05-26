@@ -207,7 +207,46 @@ nav {
     transition: color 0.4s;
 
 }
+#nav-links .portfolio:hover .dropdown{
+    visibility: visible;
+    opacity: 1;
+    position: all;
+    transition: all .4s;
+}
+#nav-links .dropdown{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 50rem;
+    top: 6.5rem;
+    padding: 5px 20px;
+    border: none;
+    background-color: #2C3E4F;
+    border-radius: 4px;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+}
+#nav-links .dropdown::before{
+    content: " ";
+    height: 2px;
+    width: 100%;
+    
+    position: absolute;
 
+    background-color:#1ABC9B;
+    top: 0;
+    left: 0;
+}
+#nav-links .dropdown li a{
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    font-size: large;
+    transition: all .4s;   
+}
+#nav-links .dropdown li a:hover{
+    color: #1ABC9B;
+}
 #nav-links .nav-link:hover {
     color: #1ABC9B;
 }
